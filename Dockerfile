@@ -21,8 +21,6 @@ RUN a2enmod rewrite \
             proxy \
             proxy_fcgi
 
-COPY ./php.ini /usr/local/etc/php/
-
 RUN apt-get update && \
     apt-get install -y php5-mysql \
                        php5-curl \
